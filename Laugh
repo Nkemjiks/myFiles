@@ -1,0 +1,26 @@
+var laugh = function (num) {
+    var laugh = "";
+    for(var i = 1; i <= num; i++){
+        laugh+= "ha";
+    }
+    return laugh + "!";
+};
+
+console.log(laugh(10));
+//Cry. Named function
+var cry = function love() {
+  return "boohoo!";  
+};
+console.log(cry());
+
+//Inline function expression when calling back a funtion and using a function expression as a parameter or argument
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+emotions("happy", function (num) {
+    var laugh = "";
+    for(var i = 1; i <= num; i++){
+        laugh+= "ha";
+    }
+    return laugh + "!";
+});
