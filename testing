@@ -1,0 +1,12 @@
+
+var solution = 1;
+    for (var i = 1; i <= 12; i++) {
+        solution *= i;
+    }
+    console.log(solution);
+
+for (var x = 0; x <= 25; x++) {
+	for (var y = 0; y <= 99; y++) {
+		console.log(x + "-" + y);
+	}
+}

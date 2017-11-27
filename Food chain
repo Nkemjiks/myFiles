@@ -1,0 +1,9 @@
+//Using ternary operators instead of if statements to log food chain category.
+
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = eatsPlants && !eatsAnimals ? "herbivore" : eatsAnimals && !eatsPlants ? "carnivore" : eatsAnimals && eatsPlants ? "omnivore" : undefined;
+
+console.log(category);
+

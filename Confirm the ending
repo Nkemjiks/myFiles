@@ -1,0 +1,11 @@
+function confirmEnding (str, target) {
+	var newStr = str.substring(str.length - target.length);
+	console.log(newStr);
+
+	if (newStr === target) {
+		console.log(true);
+	}
+	else {console.log(false);
+	}
+}
+confirmEnding("Open sesame", "same");

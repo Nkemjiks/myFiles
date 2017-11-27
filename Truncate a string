@@ -1,0 +1,19 @@
+//Truncate a string 
+
+function truncateString(str, num) {
+  
+  if((str.length > num) && (num > 3)) {
+  	console.log(str.slice(0, num - 3) + "...");
+  } 
+
+  else if ((str.length <= num) && (num > 3)){
+  	console.log(str);
+  } 
+
+  else if ((str.length > num) && (num <= 3)) {
+  	console.log(str.slice(0, num) + "...");
+  }
+  
+}
+
+truncateString("Absolutely Longer", 2);

@@ -1,0 +1,11 @@
+function bouncer(arr) {
+
+ var result = arr.filter(Boolean);
+ 
+  /*var result = arr.filter(function(arr) {
+  	return Boolean(arr);
+  });*/
+  console.log(result);
+}
+
+bouncer([7, "ate", "", false, 9]);

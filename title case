@@ -1,0 +1,19 @@
+//Title-case a sentence
+
+function titleCase(string) {
+	//Split the string into an array
+	var array = string.split(" ");
+	console.log(array);
+
+	//divide each string in the array and change first letter to uppercase and the rest to lowercase and return to new array
+	var array1 = [];
+	for (var i = 0; i < array.length; i++) {
+		array1.push(array[i].charAt(0).toUpperCase() + array[i].slice(1).toLowerCase());
+		console.log(array1);
+	} 
+
+	//Join the new array to form a new string
+	var newString = array1.join(" ");
+	console.log(newString);
+}
+titleCase("HERE IS MY HANDLE HERE IS MY SPOUT");

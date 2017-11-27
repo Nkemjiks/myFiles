@@ -1,0 +1,8 @@
+var room = "ballroom";
+var suspect = "Mr. kaleh";
+if (room === "ballroom", suspect === "Mr. kalehoff") {
+	console.log("He did it");
+}
+else {
+	console.log("Not him");
+}

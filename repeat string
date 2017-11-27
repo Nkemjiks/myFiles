@@ -1,0 +1,15 @@
+//Repeat a string the number of times stated
+function repeatString(str, num) {
+	//returns empty is number is less tha 0
+	if (num < 0) {
+		console.log(" ");
+	}
+	//returns the new string if it is greater than 0
+	else {var newStr = str.repeat(num);
+		console.log(newStr);
+	}
+	}
+//returns empty
+repeatString("*", -2);
+//reterns newStr
+repeatString("abc", 4);

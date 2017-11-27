@@ -1,0 +1,25 @@
+//Check for Palindromes
+
+function palindrome(str) {
+  var newStr = str.replace(/[^A-Za-z0-9]/g, "");
+  console.log(newStr);
+
+  var checkToLowCase = newStr.toLowerCase();
+  console.log(checkToLowCase);
+
+  var array = checkToLowCase.split("");
+  var joi = array.reverse();
+  var joinz = joi.join("");
+  
+  console.log(joinz);
+
+  if (joinz === checkToLowCase) {
+  	return true;
+  }
+  else {
+  	return false;
+  }
+  
+}
+
+palindrome("My age is 0, 0 si ega ym.");

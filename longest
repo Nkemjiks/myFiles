@@ -1,0 +1,17 @@
+function longest(word) {
+	//split the word
+	var a = word.split(" ");
+	console.log(a);
+	//find the length of each word
+	var b = [];
+	for (var i = 0; i < a.length; i++) {
+		b.push(a[i].length);
+		console.log(b);
+	}
+	//find the highest number in each word
+	var c = b;
+	var d = Math.max.apply(null, c);//Math.max(...arr); but for ES6
+	console.log(d);
+}
+
+longest("The quick brown fox jumped over the lazy dog");

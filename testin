@@ -1,0 +1,15 @@
+function palindrome(str) {
+	var news = str.split(" ");
+  
+  console.log(news);
+
+  for (var i=0; i < news.length; i++){
+    var newz = [];
+    newz = news[i].length;
+    console.log(newz)
+  }
+  }
+
+
+
+palindrome("I want to make a cup of tea");

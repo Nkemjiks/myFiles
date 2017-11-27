@@ -1,0 +1,26 @@
+
+function mutation(arr) {
+ var arg1 = arr[0].toLowerCase();
+ var arg2 = arr[1].toLowerCase();
+ /*console.log(arg1);
+ console.log(arg2);*/
+ 	var arg3 = [];
+	 	for (var i = 0; i < arg2.length; i++) {
+	 		arg3.push(arg1.indexOf(arg2[i]));
+	 	 	}
+	 	//console.log(arg3);
+
+	 	var arg4;
+	 	for (var j = 0; j < arg3.length; j++) {
+	 		if (arg3[j] < 0) {
+	 		arg4 = arg3[j];
+	 		} 
+	 		}
+ 	if (arg4 === undefined) {
+ 		console.log(true);
+ 	} else {
+ 		console.log(false);
+ 	}
+}
+
+mutation(["hello", "hey"]);
